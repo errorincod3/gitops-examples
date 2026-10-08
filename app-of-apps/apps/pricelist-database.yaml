@@ -27,9 +27,12 @@ spec:
           value: "pricelist"
         - name: secondary.replicaCount
           value: "2"
+        - name: image.repository
+          value: "bitnamilegacy/mysql"
+        - name: global.security.allowInsecureImages
+          value: "true"
     chart: mysql
     repoURL: https://charts.bitnami.com/bitnami
-    #targetRevision: 8.4.3
     targetRevision: 9.16.2
   syncPolicy:
     automated:
